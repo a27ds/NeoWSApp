@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -14,6 +15,7 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
     let feedToday = "https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key="
+    var testJSON : JSON = JSON.null
     
     //MARK: - Variables
     @IBOutlet weak var startTableView: UITableView!
@@ -27,7 +29,7 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         //Test for FetchData Class
         
         let test = FetchData()
-        test.today(url: "\(feedToday)\(nasaKey)")
+        test.fetchData(url: "\(feedToday)\(nasaKey)")
         
         //Add test data to list
         listOfAsteroids.append(Asteroid(name: "Asteroid nr 555", distance: 230, size: 15, isDangerous: true))
