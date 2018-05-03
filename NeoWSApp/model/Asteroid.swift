@@ -10,11 +10,11 @@ import Foundation
 
 class Asteroid {
     var name : String
-    var distance : Int
+    var distance : Float
     var size : Int
     var isDangerous : Bool
     
-    init(name: String, distance: Int, size: Int, isDangerous: Bool) {
+    init(name: String, distance: Float, size: Int, isDangerous: Bool) {
         self.name = name
         self.distance = distance
         self.size = size
