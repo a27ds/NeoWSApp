@@ -10,6 +10,7 @@ import UIKit
 
 class StartViewController: UIViewController {
     
+    @IBOutlet weak var startTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
