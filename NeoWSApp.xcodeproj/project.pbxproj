@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		008458226CBA1BD7AF95D392 /* Pods_NeoWSAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C73DA09E868ADCA4CDD2285 /* Pods_NeoWSAppTests.framework */; };
 		9A503A3996C478B666D47845 /* Pods_NeoWSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */; };
+		9BF6961B209B130000D81530 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961A209B130000D81530 /* Asteroid.swift */; };
+		9BF6961D209B133400D81530 /* fetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961C209B133400D81530 /* fetchData.swift */; };
+		9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961E209B13B600D81530 /* DetailsViewController.swift */; };
+		9BF69622209B13F400D81530 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF69620209B13F400D81530 /* CustomCell.swift */; };
+		9BF69623209B13F400D81530 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF69621209B13F400D81530 /* CustomCell.xib */; };
 		AD333D4B6E334548903C1470 /* Pods_NeoWSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */; };
 		F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */; };
-		F3B0DB9B209B0BC000E7BD22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */; };
+		F3B0DB9B209B0BC000E7BD22 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9A209B0BC000E7BD22 /* StartViewController.swift */; };
 		F3B0DB9E209B0BC000E7BD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DB9C209B0BC000E7BD22 /* Main.storyboard */; };
 		F3B0DBA1209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */; };
 		F3B0DBA3209B0BC100E7BD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */; };
@@ -45,11 +50,16 @@
 		53814ABAE150813ABA666DDC /* Pods-NeoWSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSApp/Pods-NeoWSApp.release.xcconfig"; sourceTree = "<group>"; };
 		6F9EC229C639D3E9A26F7C0B /* Pods-NeoWSAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92AB5ED8843BBFFF4D5492EA /* Pods-NeoWSAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BF6961A209B130000D81530 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		9BF6961C209B133400D81530 /* fetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchData.swift; sourceTree = "<group>"; };
+		9BF6961E209B13B600D81530 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9BF69620209B13F400D81530 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9BF69621209B13F400D81530 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C042E5E9EB85F4EC3FB0C841 /* Pods-NeoWSAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppTests/Pods-NeoWSAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3B0DB95209B0BC000E7BD22 /* NeoWSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoWSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3B0DB9A209B0BC000E7BD22 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F3B0DB9D209B0BC000E7BD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3B0DBA0209B0BC000E7BD22 /* NeoWSApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeoWSApp.xcdatamodel; sourceTree = "<group>"; };
 		F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,10 +124,51 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9BF69616209B125A00D81530 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */,
+				9BF6961A209B130000D81530 /* Asteroid.swift */,
+				9BF6961C209B133400D81530 /* fetchData.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9BF69617209B127300D81530 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DBA4209B0BC100E7BD22 /* LaunchScreen.storyboard */,
+				F3B0DB9C209B0BC000E7BD22 /* Main.storyboard */,
+				9BF69621209B13F400D81530 /* CustomCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9BF69618209B127C00D81530 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */,
+				F3B0DB9A209B0BC000E7BD22 /* StartViewController.swift */,
+				9BF6961E209B13B600D81530 /* DetailsViewController.swift */,
+				9BF69620209B13F400D81530 /* CustomCell.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9BF69619209B12B200D81530 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DBA7209B0BC100E7BD22 /* Info.plist */,
+				F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
 		F3B0DB8C209B0BC000E7BD22 = {
 			isa = PBXGroup;
 			children = (
 				F3B0DB97209B0BC000E7BD22 /* NeoWSApp */,
+				9BF69619209B12B200D81530 /* supporting files */,
 				F3B0DBAF209B0BC100E7BD22 /* NeoWSAppTests */,
 				F3B0DBBA209B0BC100E7BD22 /* NeoWSAppUITests */,
 				F3B0DB96209B0BC000E7BD22 /* Products */,
@@ -139,13 +190,9 @@
 		F3B0DB97209B0BC000E7BD22 /* NeoWSApp */ = {
 			isa = PBXGroup;
 			children = (
-				F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */,
-				F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */,
-				F3B0DB9C209B0BC000E7BD22 /* Main.storyboard */,
-				F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */,
-				F3B0DBA4209B0BC100E7BD22 /* LaunchScreen.storyboard */,
-				F3B0DBA7209B0BC100E7BD22 /* Info.plist */,
-				F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */,
+				9BF69618209B127C00D81530 /* controller */,
+				9BF69617209B127300D81530 /* view */,
+				9BF69616209B125A00D81530 /* model */,
 			);
 			path = NeoWSApp;
 			sourceTree = "<group>";
@@ -278,6 +325,7 @@
 			files = (
 				F3B0DBA6209B0BC100E7BD22 /* LaunchScreen.storyboard in Resources */,
 				F3B0DBA3209B0BC100E7BD22 /* Assets.xcassets in Resources */,
+				9BF69623209B13F400D81530 /* CustomCell.xib in Resources */,
 				F3B0DB9E209B0BC000E7BD22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,9 +432,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B0DB9B209B0BC000E7BD22 /* ViewController.swift in Sources */,
+				9BF6961B209B130000D81530 /* Asteroid.swift in Sources */,
+				9BF6961D209B133400D81530 /* fetchData.swift in Sources */,
+				F3B0DB9B209B0BC000E7BD22 /* StartViewController.swift in Sources */,
 				F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */,
 				F3B0DBA1209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld in Sources */,
+				9BF69622209B13F400D81530 /* CustomCell.swift in Sources */,
+				9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +615,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -579,7 +634,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -596,7 +654,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -614,7 +676,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -631,7 +697,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -648,7 +718,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
