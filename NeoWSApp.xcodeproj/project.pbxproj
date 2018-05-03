@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008458226CBA1BD7AF95D392 /* Pods_NeoWSAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C73DA09E868ADCA4CDD2285 /* Pods_NeoWSAppTests.framework */; };
+		9A503A3996C478B666D47845 /* Pods_NeoWSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */; };
+		AD333D4B6E334548903C1470 /* Pods_NeoWSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */; };
 		F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */; };
 		F3B0DB9B209B0BC000E7BD22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */; };
 		F3B0DB9E209B0BC000E7BD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DB9C209B0BC000E7BD22 /* Main.storyboard */; };
@@ -35,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D064C32A4840AF0ACEFE83 /* Pods-NeoWSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSApp/Pods-NeoWSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C73DA09E868ADCA4CDD2285 /* Pods_NeoWSAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F25797D41D46BA99C077C50 /* Pods-NeoWSAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppTests/Pods-NeoWSAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53814ABAE150813ABA666DDC /* Pods-NeoWSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSApp/Pods-NeoWSApp.release.xcconfig"; sourceTree = "<group>"; };
+		6F9EC229C639D3E9A26F7C0B /* Pods-NeoWSAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92AB5ED8843BBFFF4D5492EA /* Pods-NeoWSAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C042E5E9EB85F4EC3FB0C841 /* Pods-NeoWSAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppTests/Pods-NeoWSAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3B0DB95209B0BC000E7BD22 /* NeoWSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoWSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A503A3996C478B666D47845 /* Pods_NeoWSApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008458226CBA1BD7AF95D392 /* Pods_NeoWSAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD333D4B6E334548903C1470 /* Pods_NeoWSAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A8FD15E6624179552DF153F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */,
+				2C73DA09E868ADCA4CDD2285 /* Pods_NeoWSAppTests.framework */,
+				B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2748C54CC755FB009396162F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06D064C32A4840AF0ACEFE83 /* Pods-NeoWSApp.debug.xcconfig */,
+				53814ABAE150813ABA666DDC /* Pods-NeoWSApp.release.xcconfig */,
+				2F25797D41D46BA99C077C50 /* Pods-NeoWSAppTests.debug.xcconfig */,
+				C042E5E9EB85F4EC3FB0C841 /* Pods-NeoWSAppTests.release.xcconfig */,
+				92AB5ED8843BBFFF4D5492EA /* Pods-NeoWSAppUITests.debug.xcconfig */,
+				6F9EC229C639D3E9A26F7C0B /* Pods-NeoWSAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F3B0DB8C209B0BC000E7BD22 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				F3B0DBAF209B0BC100E7BD22 /* NeoWSAppTests */,
 				F3B0DBBA209B0BC100E7BD22 /* NeoWSAppUITests */,
 				F3B0DB96209B0BC000E7BD22 /* Products */,
+				2748C54CC755FB009396162F /* Pods */,
+				0A8FD15E6624179552DF153F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3B0DBC0209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSApp" */;
 			buildPhases = (
+				BD33A0EDDC05DB6E4E286873 /* [CP] Check Pods Manifest.lock */,
 				F3B0DB91209B0BC000E7BD22 /* Sources */,
 				F3B0DB92209B0BC000E7BD22 /* Frameworks */,
 				F3B0DB93209B0BC000E7BD22 /* Resources */,
+				B891563A8F9F5121C6F5B5E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3B0DBC3209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSAppTests" */;
 			buildPhases = (
+				F29C61091A8BAEDB80F164ED /* [CP] Check Pods Manifest.lock */,
 				F3B0DBA8209B0BC100E7BD22 /* Sources */,
 				F3B0DBA9209B0BC100E7BD22 /* Frameworks */,
 				F3B0DBAA209B0BC100E7BD22 /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3B0DBC6209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSAppUITests" */;
 			buildPhases = (
+				40B7EF69247664889145C75D /* [CP] Check Pods Manifest.lock */,
 				F3B0DBB3209B0BC100E7BD22 /* Sources */,
 				F3B0DBB4209B0BC100E7BD22 /* Frameworks */,
 				F3B0DBB5209B0BC100E7BD22 /* Resources */,
@@ -253,6 +297,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40B7EF69247664889145C75D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeoWSAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B891563A8F9F5121C6F5B5E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NeoWSApp/Pods-NeoWSApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeoWSApp/Pods-NeoWSApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD33A0EDDC05DB6E4E286873 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeoWSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F29C61091A8BAEDB80F164ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeoWSAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3B0DB91209B0BC000E7BD22 /* Sources */ = {
@@ -432,15 +557,13 @@
 		};
 		F3B0DBC1209B0BC100E7BD22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D064C32A4840AF0ACEFE83 /* Pods-NeoWSApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -450,15 +573,13 @@
 		};
 		F3B0DBC2209B0BC100E7BD22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53814ABAE150813ABA666DDC /* Pods-NeoWSApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -468,17 +589,14 @@
 		};
 		F3B0DBC4209B0BC100E7BD22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F25797D41D46BA99C077C50 /* Pods-NeoWSAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,17 +607,14 @@
 		};
 		F3B0DBC5209B0BC100E7BD22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C042E5E9EB85F4EC3FB0C841 /* Pods-NeoWSAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -510,16 +625,13 @@
 		};
 		F3B0DBC7209B0BC100E7BD22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AB5ED8843BBFFF4D5492EA /* Pods-NeoWSAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -530,16 +642,13 @@
 		};
 		F3B0DBC8209B0BC100E7BD22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F9EC229C639D3E9A26F7C0B /* Pods-NeoWSAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
 				INFOPLIST_FILE = NeoWSAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
