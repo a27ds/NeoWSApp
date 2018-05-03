@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */; };
+		F3B0DB9B209B0BC000E7BD22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */; };
+		F3B0DB9E209B0BC000E7BD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DB9C209B0BC000E7BD22 /* Main.storyboard */; };
+		F3B0DBA1209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */; };
+		F3B0DBA3209B0BC100E7BD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */; };
+		F3B0DBA6209B0BC100E7BD22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DBA4209B0BC100E7BD22 /* LaunchScreen.storyboard */; };
+		F3B0DBB1209B0BC100E7BD22 /* NeoWSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DBB0209B0BC100E7BD22 /* NeoWSAppTests.swift */; };
+		F3B0DBBC209B0BC100E7BD22 /* NeoWSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DBBB209B0BC100E7BD22 /* NeoWSAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3B0DBAD209B0BC100E7BD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B0DB8D209B0BC000E7BD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B0DB94209B0BC000E7BD22;
+			remoteInfo = NeoWSApp;
+		};
+		F3B0DBB8209B0BC100E7BD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3B0DB8D209B0BC000E7BD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B0DB94209B0BC000E7BD22;
+			remoteInfo = NeoWSApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3B0DB95209B0BC000E7BD22 /* NeoWSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoWSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3B0DB9D209B0BC000E7BD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3B0DBA0209B0BC000E7BD22 /* NeoWSApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NeoWSApp.xcdatamodel; sourceTree = "<group>"; };
+		F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3B0DBA5209B0BC100E7BD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3B0DBA7209B0BC100E7BD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B0DBAC209B0BC100E7BD22 /* NeoWSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoWSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B0DBB0209B0BC100E7BD22 /* NeoWSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoWSAppTests.swift; sourceTree = "<group>"; };
+		F3B0DBB2209B0BC100E7BD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B0DBB7209B0BC100E7BD22 /* NeoWSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoWSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B0DBBB209B0BC100E7BD22 /* NeoWSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoWSAppUITests.swift; sourceTree = "<group>"; };
+		F3B0DBBD209B0BC100E7BD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3B0DB92209B0BC000E7BD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B0DBA9209B0BC100E7BD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B0DBB4209B0BC100E7BD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3B0DB8C209B0BC000E7BD22 = {
+			isa = PBXGroup;
+			children = (
+				F3B0DB97209B0BC000E7BD22 /* NeoWSApp */,
+				F3B0DBAF209B0BC100E7BD22 /* NeoWSAppTests */,
+				F3B0DBBA209B0BC100E7BD22 /* NeoWSAppUITests */,
+				F3B0DB96209B0BC000E7BD22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3B0DB96209B0BC000E7BD22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DB95209B0BC000E7BD22 /* NeoWSApp.app */,
+				F3B0DBAC209B0BC100E7BD22 /* NeoWSAppTests.xctest */,
+				F3B0DBB7209B0BC100E7BD22 /* NeoWSAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3B0DB97209B0BC000E7BD22 /* NeoWSApp */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */,
+				F3B0DB9A209B0BC000E7BD22 /* ViewController.swift */,
+				F3B0DB9C209B0BC000E7BD22 /* Main.storyboard */,
+				F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */,
+				F3B0DBA4209B0BC100E7BD22 /* LaunchScreen.storyboard */,
+				F3B0DBA7209B0BC100E7BD22 /* Info.plist */,
+				F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */,
+			);
+			path = NeoWSApp;
+			sourceTree = "<group>";
+		};
+		F3B0DBAF209B0BC100E7BD22 /* NeoWSAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DBB0209B0BC100E7BD22 /* NeoWSAppTests.swift */,
+				F3B0DBB2209B0BC100E7BD22 /* Info.plist */,
+			);
+			path = NeoWSAppTests;
+			sourceTree = "<group>";
+		};
+		F3B0DBBA209B0BC100E7BD22 /* NeoWSAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3B0DBBB209B0BC100E7BD22 /* NeoWSAppUITests.swift */,
+				F3B0DBBD209B0BC100E7BD22 /* Info.plist */,
+			);
+			path = NeoWSAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3B0DB94209B0BC000E7BD22 /* NeoWSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B0DBC0209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSApp" */;
+			buildPhases = (
+				F3B0DB91209B0BC000E7BD22 /* Sources */,
+				F3B0DB92209B0BC000E7BD22 /* Frameworks */,
+				F3B0DB93209B0BC000E7BD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeoWSApp;
+			productName = NeoWSApp;
+			productReference = F3B0DB95209B0BC000E7BD22 /* NeoWSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3B0DBAB209B0BC100E7BD22 /* NeoWSAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B0DBC3209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSAppTests" */;
+			buildPhases = (
+				F3B0DBA8209B0BC100E7BD22 /* Sources */,
+				F3B0DBA9209B0BC100E7BD22 /* Frameworks */,
+				F3B0DBAA209B0BC100E7BD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B0DBAE209B0BC100E7BD22 /* PBXTargetDependency */,
+			);
+			name = NeoWSAppTests;
+			productName = NeoWSAppTests;
+			productReference = F3B0DBAC209B0BC100E7BD22 /* NeoWSAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3B0DBB6209B0BC100E7BD22 /* NeoWSAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B0DBC6209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSAppUITests" */;
+			buildPhases = (
+				F3B0DBB3209B0BC100E7BD22 /* Sources */,
+				F3B0DBB4209B0BC100E7BD22 /* Frameworks */,
+				F3B0DBB5209B0BC100E7BD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3B0DBB9209B0BC100E7BD22 /* PBXTargetDependency */,
+			);
+			name = NeoWSAppUITests;
+			productName = NeoWSAppUITests;
+			productReference = F3B0DBB7209B0BC100E7BD22 /* NeoWSAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3B0DB8D209B0BC000E7BD22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = a27;
+				TargetAttributes = {
+					F3B0DB94209B0BC000E7BD22 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F3B0DBAB209B0BC100E7BD22 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F3B0DB94209B0BC000E7BD22;
+					};
+					F3B0DBB6209B0BC100E7BD22 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F3B0DB94209B0BC000E7BD22;
+					};
+				};
+			};
+			buildConfigurationList = F3B0DB90209B0BC000E7BD22 /* Build configuration list for PBXProject "NeoWSApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3B0DB8C209B0BC000E7BD22;
+			productRefGroup = F3B0DB96209B0BC000E7BD22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3B0DB94209B0BC000E7BD22 /* NeoWSApp */,
+				F3B0DBAB209B0BC100E7BD22 /* NeoWSAppTests */,
+				F3B0DBB6209B0BC100E7BD22 /* NeoWSAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3B0DB93209B0BC000E7BD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B0DBA6209B0BC100E7BD22 /* LaunchScreen.storyboard in Resources */,
+				F3B0DBA3209B0BC100E7BD22 /* Assets.xcassets in Resources */,
+				F3B0DB9E209B0BC000E7BD22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B0DBAA209B0BC100E7BD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B0DBB5209B0BC100E7BD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3B0DB91209B0BC000E7BD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B0DB9B209B0BC000E7BD22 /* ViewController.swift in Sources */,
+				F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */,
+				F3B0DBA1209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B0DBA8209B0BC100E7BD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B0DBB1209B0BC100E7BD22 /* NeoWSAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B0DBB3209B0BC100E7BD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B0DBBC209B0BC100E7BD22 /* NeoWSAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3B0DBAE209B0BC100E7BD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B0DB94209B0BC000E7BD22 /* NeoWSApp */;
+			targetProxy = F3B0DBAD209B0BC100E7BD22 /* PBXContainerItemProxy */;
+		};
+		F3B0DBB9209B0BC100E7BD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B0DB94209B0BC000E7BD22 /* NeoWSApp */;
+			targetProxy = F3B0DBB8209B0BC100E7BD22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3B0DB9C209B0BC000E7BD22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B0DB9D209B0BC000E7BD22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3B0DBA4209B0BC100E7BD22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3B0DBA5209B0BC100E7BD22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3B0DBBE209B0BC100E7BD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3B0DBBF209B0BC100E7BD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3B0DBC1209B0BC100E7BD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7JKA6624L;
+				INFOPLIST_FILE = NeoWSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3B0DBC2209B0BC100E7BD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7JKA6624L;
+				INFOPLIST_FILE = NeoWSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3B0DBC4209B0BC100E7BD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7JKA6624L;
+				INFOPLIST_FILE = NeoWSAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeoWSApp.app/NeoWSApp";
+			};
+			name = Debug;
+		};
+		F3B0DBC5209B0BC100E7BD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7JKA6624L;
+				INFOPLIST_FILE = NeoWSAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeoWSApp.app/NeoWSApp";
+			};
+			name = Release;
+		};
+		F3B0DBC7209B0BC100E7BD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7JKA6624L;
+				INFOPLIST_FILE = NeoWSAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeoWSApp;
+			};
+			name = Debug;
+		};
+		F3B0DBC8209B0BC100E7BD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G7JKA6624L;
+				INFOPLIST_FILE = NeoWSAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.27differentsounds.NeoWSAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeoWSApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3B0DB90209B0BC000E7BD22 /* Build configuration list for PBXProject "NeoWSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B0DBBE209B0BC100E7BD22 /* Debug */,
+				F3B0DBBF209B0BC100E7BD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B0DBC0209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B0DBC1209B0BC100E7BD22 /* Debug */,
+				F3B0DBC2209B0BC100E7BD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B0DBC3209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B0DBC4209B0BC100E7BD22 /* Debug */,
+				F3B0DBC5209B0BC100E7BD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B0DBC6209B0BC100E7BD22 /* Build configuration list for PBXNativeTarget "NeoWSAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B0DBC7209B0BC100E7BD22 /* Debug */,
+				F3B0DBC8209B0BC100E7BD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3B0DBA0209B0BC000E7BD22 /* NeoWSApp.xcdatamodel */,
+			);
+			currentVersion = F3B0DBA0209B0BC000E7BD22 /* NeoWSApp.xcdatamodel */;
+			path = NeoWSApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3B0DB8D209B0BC000E7BD22 /* Project object */;
+}
