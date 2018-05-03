@@ -10,7 +10,7 @@
 		008458226CBA1BD7AF95D392 /* Pods_NeoWSAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C73DA09E868ADCA4CDD2285 /* Pods_NeoWSAppTests.framework */; };
 		9A503A3996C478B666D47845 /* Pods_NeoWSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */; };
 		9BF6961B209B130000D81530 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961A209B130000D81530 /* Asteroid.swift */; };
-		9BF6961D209B133400D81530 /* fetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961C209B133400D81530 /* fetchData.swift */; };
+		9BF6961D209B133400D81530 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961C209B133400D81530 /* FetchData.swift */; };
 		9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961E209B13B600D81530 /* DetailsViewController.swift */; };
 		9BF69622209B13F400D81530 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF69620209B13F400D81530 /* CustomCell.swift */; };
 		9BF69623209B13F400D81530 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF69621209B13F400D81530 /* CustomCell.xib */; };
@@ -51,7 +51,7 @@
 		6F9EC229C639D3E9A26F7C0B /* Pods-NeoWSAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92AB5ED8843BBFFF4D5492EA /* Pods-NeoWSAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BF6961A209B130000D81530 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
-		9BF6961C209B133400D81530 /* fetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchData.swift; sourceTree = "<group>"; };
+		9BF6961C209B133400D81530 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		9BF6961E209B13B600D81530 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		9BF69620209B13F400D81530 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		9BF69621209B13F400D81530 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			children = (
 				F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */,
 				9BF6961A209B130000D81530 /* Asteroid.swift */,
-				9BF6961C209B133400D81530 /* fetchData.swift */,
+				9BF6961C209B133400D81530 /* FetchData.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -431,7 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BF6961B209B130000D81530 /* Asteroid.swift in Sources */,
-				9BF6961D209B133400D81530 /* fetchData.swift in Sources */,
+				9BF6961D209B133400D81530 /* FetchData.swift in Sources */,
 				F3B0DB9B209B0BC000E7BD22 /* StartViewController.swift in Sources */,
 				F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */,
 				F3B0DBA1209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld in Sources */,
