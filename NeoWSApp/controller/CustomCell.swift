@@ -10,6 +10,12 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var dangerousLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
