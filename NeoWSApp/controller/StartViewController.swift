@@ -10,6 +10,11 @@ import UIKit
 
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    // MARK: - API Keys and API Url's
+    
+    let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
+    let feedToday = "https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key="
+    
     //MARK: - Variables
     @IBOutlet weak var startTableView: UITableView!
     
@@ -18,6 +23,11 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //MARK: - StartUp functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Test for FetchData Class
+        
+        let test = FetchData()
+        test.today(url: "\(feedToday)\(nasaKey)")
         
         //Add test data to list
         listOfAsteroids.append(Asteroid(name: "Asteroid nr 555", distance: 230, size: 15, isDangerous: true))
