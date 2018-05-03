@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-
 class FetchData {
     
     func fetchData (url: String) {
@@ -24,27 +23,4 @@ class FetchData {
             }
         }
     }
-    
-//    func getWeatherData(url: String, parameters: [String: String]) {
-//        Alamofire.request(url, method: .get, parameters: parameters).responseJSON {
-//            response in
-//            if response.result.isSuccess {
-//                print("Success! Got the weather data")
-//
-//                let weatherJSON : JSON = JSON(response.result.value!)
-//
-//                self.updateWeatherData(json: weatherJSON)
-//
-//            } else {
-//
-//                self.cityLabel.text = "Connection Issues"
-//            }
-//        }
-//    }
-    
-    func returnJSON (input: JSON) -> JSON {
-        return input
-    }
-    
-    
 }
