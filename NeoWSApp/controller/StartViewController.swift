@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -15,7 +14,6 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
     let feedToday = "https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key="
-    var testJSON : JSON = JSON.null
     
     //MARK: - Variables
     @IBOutlet weak var startTableView: UITableView!
