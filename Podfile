@@ -10,7 +10,6 @@ target 'NeoWSApp' do
 pod 'SwiftyJSON', '~> 4.0'
 pod 'Alamofire', '~> 4.7'
 pod 'SVProgressHUD'
-pod 'ChameleonFramework/Swift'
 
   target 'NeoWSAppTests' do
     inherit! :search_paths
