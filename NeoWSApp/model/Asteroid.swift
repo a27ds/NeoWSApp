@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Asteroid {
     var name : String
@@ -19,5 +20,10 @@ class Asteroid {
         self.distance = distance
         self.size = size
         self.isDangerous = isDangerous
+    }
+    
+    static func test(json: JSON) {
+        print(json)
+        // Här får vi parsa in JSON alternativ att vi skapar en ny klass som man tar in JSON och parsar ut allt
     }
 }

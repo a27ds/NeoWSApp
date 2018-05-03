@@ -27,7 +27,7 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         //Test for FetchData Class
         
         let test = FetchData()
-        test.today(url: "\(feedToday)\(nasaKey)")
+        test.fetchData(url: "\(feedToday)\(nasaKey)")
         
         //Add test data to list
         listOfAsteroids.append(Asteroid(name: "Asteroid nr 555", distance: 230, size: 15, isDangerous: true))

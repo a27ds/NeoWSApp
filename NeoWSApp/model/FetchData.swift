@@ -12,18 +12,15 @@ import SwiftyJSON
 
 class FetchData {
     
-    func today (url: String) {
+    func fetchData (url: String) {
         Alamofire.request(url, method: .get).validate().responseJSON { response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                print("JSON: \(json)")
-            case .failure(let error):
-                print(error)
+            if response.result.isSuccess {
+                print("Got the info")
+                let feedData : JSON = JSON(response.result.value!)
+                Asteroid.test(json: feedData)
+            } else {
+                print("Error \(response.result.error)")
             }
         }
     }
-    
-    
-    
 }
