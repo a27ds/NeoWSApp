@@ -21,6 +21,7 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         //Add test data to list
         listOfAsteroids.append(Asteroid(name: "Asteroid nr 555", distance: 230, size: 15, isDangerous: true))
+        listOfAsteroids.append(Asteroid(name: "7788A", distance: 34568, size: 57483, isDangerous: false))
     }
     
     //MARK: - TableView
@@ -35,8 +36,13 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.nameLabel.text = "Name: \(asteroid.name)"
         cell.distanceLabel.text = "Distance from Earth: \(asteroid.distance) km"
-        cell.dangerousLabel.text = "Asteroid is dangerous: \(asteroid.isDangerous)"
-        cell.sizeLabel.text = "Diameter: \(asteroid.size) m"
+        cell.dangerousLabel.text = "Dangerous: \(asteroid.isDangerous)"
+        
+        if asteroid.size > 999 {
+            cell.sizeLabel.text =  String(format: "Diameter: %.2f km", asteroid.size/1000)
+        } else {
+            cell.sizeLabel.text = String(format: "Diameter: %.0f m", asteroid.size)
+        }
         
         return cell
     }
