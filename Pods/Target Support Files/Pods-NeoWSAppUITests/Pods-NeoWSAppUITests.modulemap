@@ -1,0 +1,6 @@
+framework module Pods_NeoWSAppUITests {
+  umbrella header "Pods-NeoWSAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
