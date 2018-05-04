@@ -44,14 +44,14 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let asteroid = listOfAsteroids[indexPath.row]
         
-        cell.nameLabel.text = "Name: \(asteroid.name)"
-        cell.distanceLabel.text = "Distance from Earth: \(asteroid.distance) km"
-        cell.dangerousLabel.text = "Dangerous: \(asteroid.isDangerous)"
+        cell.nameLabel.text = "\(asteroid.name)"
+        cell.distanceLabel.text = "\(asteroid.distance) km"
+        cell.dangerousLabel.text = "\(asteroid.isDangerous)"
         
         if asteroid.size > 999 {
-            cell.sizeLabel.text =  String(format: "Diameter: %.2f km", asteroid.size/1000)
+            cell.sizeLabel.text =  String(format: "%.2f km", asteroid.size/1000)
         } else {
-            cell.sizeLabel.text = String(format: "Diameter: %.0f m", asteroid.size)
+            cell.sizeLabel.text = String(format: "%.0f m", asteroid.size)
         }
         
         return cell
