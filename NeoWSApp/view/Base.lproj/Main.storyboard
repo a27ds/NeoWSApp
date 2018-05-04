@@ -56,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="startTableView" destination="l01-0e-LB4" id="3mQ-hh-WLI"/>
+                        <segue destination="YUg-mI-C2P" kind="presentation" identifier="toDetailsVC" id="LLD-Df-uFz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,6 +83,9 @@
                                     <navigationItem title="ABC 123" prompt=" " id="Neb-nB-PNn">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="BackButton" id="UD4-tP-hGn">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="backBtnClicked:" destination="YUg-mI-C2P" id="PXY-lS-1Lk"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

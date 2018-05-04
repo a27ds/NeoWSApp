@@ -50,9 +50,9 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.dangerousLabel.text = "Dangerous: \(asteroid.dangerous)"
         
         if asteroid.size > 999 {
-            cell.sizeLabel.text =  String(format: "Diameter: %.2f km", asteroid.size/1000)
+            cell.sizeLabel.text =  String(format: "%.2f km", asteroid.size/1000)
         } else {
-            cell.sizeLabel.text = String(format: "Diameter: %.0f m", asteroid.size)
+            cell.sizeLabel.text = String(format: "%.0f m", asteroid.size)
         }
         
         return cell
@@ -60,6 +60,10 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
 
 }
