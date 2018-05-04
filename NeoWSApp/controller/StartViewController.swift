@@ -44,6 +44,26 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     //MARK: - TableView
+    func numberOfSections(in tableView: UITableView) -> Int {
+        var numOfSections: Int = 0
+        if !AsteroidBank.listOfAsteroids.isEmpty {
+            tableView.separatorStyle = .singleLine
+            numOfSections            = 1
+            tableView.backgroundView = nil
+            tableView.rowHeight = 140
+            
+        } else {
+            let noDataLabel: UILabel     = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text          = "No asteroid data available"
+            noDataLabel.textColor     = UIColor.black
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView  = noDataLabel
+            tableView.separatorStyle  = .none
+            tableView.isScrollEnabled = false
+        }
+        return numOfSections
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return AsteroidBank.listOfAsteroids.count
     }
