@@ -9,10 +9,12 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import SVProgressHUD
 
 class FetchData {
     
     func fetchData (url: String) {
+        SVProgressHUD.show(withStatus: "Downloading data")
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             if response.result.isSuccess {
                 print("Got the info")

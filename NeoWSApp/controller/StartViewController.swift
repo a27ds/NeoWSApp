@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -26,6 +27,8 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadDataStartTableView(notification:)), name: .doneParsing, object: nil)
+        
         //Test for FetchData Class
         
         let test = FetchData()
@@ -33,7 +36,12 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
+    // MARK: - Notification
     
+    @objc func reloadDataStartTableView(notification: NSNotification) {
+        startTableView.reloadData()
+        SVProgressHUD.dismiss()
+    }
     
     //MARK: - TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,9 +53,9 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let asteroid = AsteroidBank.listOfAsteroids[indexPath.row]
         
-        cell.nameLabel.text = "Name: \(asteroid.name)"
-        cell.distanceLabel.text = "Distance from Earth: \(asteroid.missDistance) km"
-        cell.dangerousLabel.text = "Dangerous: \(asteroid.dangerous)"
+        cell.nameLabel.text = "\(asteroid.name)"
+        cell.distanceLabel.text = "\(asteroid.missDistance) km"
+        cell.dangerousLabel.text = "\(asteroid.dangerous)"
         
         if asteroid.size > 999 {
             cell.sizeLabel.text =  String(format: "%.2f km", asteroid.size/1000)
@@ -65,12 +73,8 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
-
-    //MARK: - MemoryWarning
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-
 }
 
+extension Notification.Name {
+    static let doneParsing = Notification.Name("doneParsing")
+}
