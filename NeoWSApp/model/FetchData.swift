@@ -17,7 +17,7 @@ class FetchData {
             if response.result.isSuccess {
                 print("Got the info")
                 let feedData : JSON = JSON(response.result.value!)
-                Asteroid.test(json: feedData)
+                JSONParsing.parsing(json: feedData)
             } else {
                 print("Error \(response.result.error)")
             }

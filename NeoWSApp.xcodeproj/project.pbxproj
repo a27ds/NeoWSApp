@@ -23,6 +23,8 @@
 		F3B0DBA6209B0BC100E7BD22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DBA4209B0BC100E7BD22 /* LaunchScreen.storyboard */; };
 		F3B0DBB1209B0BC100E7BD22 /* NeoWSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DBB0209B0BC100E7BD22 /* NeoWSAppTests.swift */; };
 		F3B0DBBC209B0BC100E7BD22 /* NeoWSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DBBB209B0BC100E7BD22 /* NeoWSAppUITests.swift */; };
+		F3F9E1A2209C5D1A00481C51 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1A1209C5D1A00481C51 /* JSONParsing.swift */; };
+		F3F9E1A4209C69BB00481C51 /* AsteroidBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1A3209C69BB00481C51 /* AsteroidBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		F3B0DBB7209B0BC100E7BD22 /* NeoWSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoWSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B0DBBB209B0BC100E7BD22 /* NeoWSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoWSAppUITests.swift; sourceTree = "<group>"; };
 		F3B0DBBD209B0BC100E7BD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F9E1A1209C5D1A00481C51 /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		F3F9E1A3209C69BB00481C51 /* AsteroidBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 				F3B0DB9F209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld */,
 				9BF6961A209B130000D81530 /* Asteroid.swift */,
 				9BF6961C209B133400D81530 /* FetchData.swift */,
+				F3F9E1A1209C5D1A00481C51 /* JSONParsing.swift */,
+				F3F9E1A3209C69BB00481C51 /* AsteroidBank.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -432,9 +438,11 @@
 			files = (
 				9BF6961B209B130000D81530 /* Asteroid.swift in Sources */,
 				9BF6961D209B133400D81530 /* FetchData.swift in Sources */,
+				F3F9E1A2209C5D1A00481C51 /* JSONParsing.swift in Sources */,
 				F3B0DB9B209B0BC000E7BD22 /* StartViewController.swift in Sources */,
 				F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */,
 				F3B0DBA1209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld in Sources */,
+				F3F9E1A4209C69BB00481C51 /* AsteroidBank.swift in Sources */,
 				9BF69622209B13F400D81530 /* CustomCell.swift in Sources */,
 				9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */,
 			);

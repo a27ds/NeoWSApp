@@ -11,19 +11,20 @@ import SwiftyJSON
 
 class Asteroid {
     var name : String
-    var distance : Int
     var size : Float
-    var isDangerous : Bool
-    
-    init(name: String, distance: Int, size: Float, isDangerous: Bool) {
+    var dangerous : Bool
+    var velocity : Int
+    var missDistance : Int
+    var orbitingBody : String
+
+    init(name: String, size: Float, dangerous: Bool, velocity: Int, missDistance: Int, orbitingBody: String) {
         self.name = name
-        self.distance = distance
         self.size = size
-        self.isDangerous = isDangerous
+        self.dangerous = dangerous
+        self.velocity = velocity
+        self.missDistance = missDistance
+        self.orbitingBody = orbitingBody
     }
     
-    static func test(json: JSON) {
-        print(json)
-        // Här får vi parsa in JSON alternativ att vi skapar en ny klass som man tar in JSON och parsar ut allt
-    }
+    
 }
