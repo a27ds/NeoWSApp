@@ -66,5 +66,11 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
 
+    //MARK: - MemoryWarning
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+
 }
 
