@@ -75,20 +75,17 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let asteroid = AsteroidBank.listOfAsteroids[indexPath.row]
         
         cell.nameLabel.text = "\(asteroid.name)"
-        cell.distanceLabel.text = "\(asteroid.missDistance) km"
-        cell.dangerousLabel.text = "\(asteroid.dangerous)"
-        
         if asteroid.size > 999 {
             cell.sizeLabel.text =  String(format: "%.2f km", asteroid.size/1000)
         } else {
             cell.sizeLabel.text = String(format: "%.0f m", asteroid.size)
         }
+        cell.dangerousLabel.text = "\(asteroid.dangerous)"
+        cell.velocityLabel.text = "\(asteroid.velocity) km/s"
+        cell.distanceLabel.text = "\(asteroid.missDistance) km"
+        cell.orbitingBodyLabel.text = "\(asteroid.orbitingBody)"
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
