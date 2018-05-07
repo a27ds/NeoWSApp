@@ -14,6 +14,8 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var sizeLabel: UILabel!
     @IBOutlet weak var dangerousLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var velocityLabel: UILabel!
+    @IBOutlet weak var orbitingBodyLabel: UILabel!
     
     
     override func awakeFromNib() {
