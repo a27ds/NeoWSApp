@@ -26,5 +26,21 @@ class Asteroid {
         self.orbitingBody = orbitingBody
     }
     
+    // Funktion som bestämmer om asteroiden är, small, medium, big eller huge och returnerar en String med den bestämda storleken.
+    func sizeTeller() -> String {
+        let small : Float = 25.0
+        let medium : Float = 999.0
+        let big : Float = 2000.0
+        
+        if self.size <= small {
+            return "Small"
+        } else if self.size <= medium {
+            return "medium"
+        } else if self.size <= big {
+            return "Big"
+        } else {
+            return "Huge"
+        }
+    }
     
 }
