@@ -11,12 +11,12 @@ import SVProgressHUD
 
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
-    
-    
     //MARK: - Variables
     @IBOutlet weak var startTableView: UITableView!
+    @IBOutlet weak var dateView: UIView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateViewHeight: NSLayoutConstraint!
+    
     
     var listOfAsteroids = [Asteroid]()
     let todaysDate = GetAsteroidDate.todaysDate()
@@ -46,6 +46,19 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @objc func reloadDataStartTableView(notification: NSNotification) {
         startTableView.reloadData()
         SVProgressHUD.dismiss()
+    }
+    
+    //MARK: - Buttons
+    @IBAction func searchBtnPressed(_ sender: UIBarButtonItem) {
+        
+        dateLabel.isHidden = true
+        dateViewHeight.constant = 200
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+        
+        
     }
     
     //MARK: - TableView
