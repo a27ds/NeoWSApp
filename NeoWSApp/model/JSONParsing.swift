@@ -21,6 +21,7 @@ class JSONParsing {
             let asteroid = Asteroid(name: name, size: size, dangerous: dangerous, velocity: velocity, missDistance: missDistance, orbitingBody: orbitingBody)
             AsteroidBank.listOfAsteroids.append(asteroid)
         }
+        NotificationCenter.default.post(name: .doneParsing, object: nil)
     }
     
     
