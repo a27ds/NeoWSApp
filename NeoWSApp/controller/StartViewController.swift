@@ -12,15 +12,18 @@ import SVProgressHUD
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - API Keys and API Url's
-    
     let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
-//    let feedToday = "https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key="
+    //    let feedToday = "https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key="
     let feed = "https://api.nasa.gov/neo/rest/v1/feed?start_date=2018-05-04&end_date=2018-05-04&api_key="
     
     
     //MARK: - Variables
     @IBOutlet weak var startTableView: UITableView!
+    @IBOutlet weak var dateView: UIView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var myConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var constraint: NSLayoutConstraint!
     var listOfAsteroids = [Asteroid]()
     
     //MARK: - StartUp functions
@@ -41,6 +44,22 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @objc func reloadDataStartTableView(notification: NSNotification) {
         startTableView.reloadData()
         SVProgressHUD.dismiss()
+    }
+    
+    //MARK: - Buttons
+    @IBAction func searchBtnPressed(_ sender: UIBarButtonItem) {
+        
+       
+        self.dateView.frame.size.height = 360
+        //self.constraint.constant = 300
+        view.layoutIfNeeded()
+        
+        
+     //   UIView.animate(withDuration: 2.0){
+        
+       // }
+        
+        
     }
     
     //MARK: - TableView
