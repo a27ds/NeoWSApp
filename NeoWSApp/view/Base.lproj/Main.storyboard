@@ -81,10 +81,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="0UA-yJ-sgE"/>
                     <connections>
-                        <outlet property="constraint" destination="BR4-eP-pzv" id="gKj-kv-bxo"/>
                         <outlet property="dateLabel" destination="cqX-mj-e5p" id="0FA-tZ-h81"/>
                         <outlet property="dateView" destination="CRF-iX-vyh" id="f8V-0b-yBY"/>
-                        <outlet property="myConstraint" destination="yGw-BX-3zH" id="lua-UQ-ZP2"/>
+                        <outlet property="dateViewHeight" destination="lBi-5Y-sUn" id="hxc-js-2bh"/>
                         <outlet property="startTableView" destination="l01-0e-LB4" id="3mQ-hh-WLI"/>
                         <segue destination="YUg-mI-C2P" kind="presentation" identifier="toDetailsVC" id="LLD-Df-uFz"/>
                     </connections>

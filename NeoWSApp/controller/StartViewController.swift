@@ -21,9 +21,9 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var startTableView: UITableView!
     @IBOutlet weak var dateView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var myConstraint: NSLayoutConstraint!
+    @IBOutlet weak var dateViewHeight: NSLayoutConstraint!
     
-    @IBOutlet weak var constraint: NSLayoutConstraint!
+    
     var listOfAsteroids = [Asteroid]()
     
     //MARK: - StartUp functions
@@ -49,15 +49,12 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //MARK: - Buttons
     @IBAction func searchBtnPressed(_ sender: UIBarButtonItem) {
         
-       
-        self.dateView.frame.size.height = 360
-        //self.constraint.constant = 300
-        view.layoutIfNeeded()
+        dateLabel.isHidden = true
+        dateViewHeight.constant = 200
         
-        
-     //   UIView.animate(withDuration: 2.0){
-        
-       // }
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
         
         
     }
