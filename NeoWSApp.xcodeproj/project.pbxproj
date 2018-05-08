@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		008458226CBA1BD7AF95D392 /* Pods_NeoWSAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C73DA09E868ADCA4CDD2285 /* Pods_NeoWSAppTests.framework */; };
+		4F616A1720A18F2800B8AC55 /* PODImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F616A1620A18F2800B8AC55 /* PODImage.swift */; };
 		6550992920A04C4400399C25 /* PictureOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6550992820A04C4400399C25 /* PictureOfTheDayViewController.swift */; };
 		9A503A3996C478B666D47845 /* Pods_NeoWSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */; };
 		9BF6961B209B130000D81530 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961A209B130000D81530 /* Asteroid.swift */; };
@@ -51,6 +52,7 @@
 		137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C73DA09E868ADCA4CDD2285 /* Pods_NeoWSAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F25797D41D46BA99C077C50 /* Pods-NeoWSAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppTests/Pods-NeoWSAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F616A1620A18F2800B8AC55 /* PODImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODImage.swift; sourceTree = "<group>"; };
 		53814ABAE150813ABA666DDC /* Pods-NeoWSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSApp/Pods-NeoWSApp.release.xcconfig"; sourceTree = "<group>"; };
 		6550992820A04C4400399C25 /* PictureOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureOfTheDayViewController.swift; sourceTree = "<group>"; };
 		6F9EC229C639D3E9A26F7C0B /* Pods-NeoWSAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				9BF6961C209B133400D81530 /* FetchData.swift */,
 				F3F9E1A1209C5D1A00481C51 /* JSONParsing.swift */,
 				F3F9E1A3209C69BB00481C51 /* AsteroidBank.swift */,
+				4F616A1620A18F2800B8AC55 /* PODImage.swift */,
 				F3733BDB20A053DF00AC0CBA /* GetAsteroidDate.swift */,
 			);
 			path = model;
@@ -453,6 +456,7 @@
 				F3F9E1A4209C69BB00481C51 /* AsteroidBank.swift in Sources */,
 				9BF69622209B13F400D81530 /* CustomCell.swift in Sources */,
 				9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */,
+				4F616A1720A18F2800B8AC55 /* PODImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

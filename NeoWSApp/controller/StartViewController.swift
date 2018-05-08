@@ -113,4 +113,5 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
 extension Notification.Name {
     static let doneParsing = Notification.Name("doneParsing")
+    static let doneParsingImageURL = Notification.Name("doneParsingImageURL")
 }
