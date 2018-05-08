@@ -84,6 +84,8 @@
                         <outlet property="dateLabel" destination="cqX-mj-e5p" id="0FA-tZ-h81"/>
                         <outlet property="dateView" destination="CRF-iX-vyh" id="f8V-0b-yBY"/>
                         <outlet property="dateViewHeight" destination="lBi-5Y-sUn" id="hxc-js-2bh"/>
+                        <outlet property="navBar" destination="NYr-Ym-2sC" id="DRb-a6-hxP"/>
+                        <outlet property="searchButton" destination="lJf-m2-aV3" id="1F5-6B-1rA"/>
                         <outlet property="startTableView" destination="l01-0e-LB4" id="3mQ-hh-WLI"/>
                         <segue destination="YUg-mI-C2P" kind="presentation" identifier="toDetailsVC" id="LLD-Df-uFz"/>
                     </connections>
