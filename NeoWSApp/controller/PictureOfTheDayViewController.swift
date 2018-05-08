@@ -5,34 +5,42 @@
 //  Created by Peter Karlsson on 2018-05-07.
 //  Copyright © 2018 a27. All rights reserved.
 //
-
 import UIKit
+import SVProgressHUD
 
 class PictureOfTheDayViewController: UIViewController {
 
     @IBOutlet weak var pictureImageView: UIImageView!
     
+    // KEY
+    let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
+    // API
+    let POD = "https://api.nasa.gov/planetary/apod?api_key="
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
+        NotificationCenter.default.addObserver(self, selector: #selector(waitForFetchImage(notification:)), name: .doneParsingImageURL, object: nil)
+        
+        let getImageInfo = FetchData()
+        getImageInfo.fetchDataImage(url: "\(POD)\(nasaKey)")
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // NOTIFICATION
+    @objc func waitForFetchImage(notification: NSNotification) {
+        showImage()
+        SVProgressHUD.dismiss()
     }
-    */
-
+    
+    func showImage(){
+        let url = URL(string: PODImage.imageUrl)
+    
+        DispatchQueue.global().async {
+            let data = try? Data(contentsOf: url!)
+            DispatchQueue.main.async {
+                self.pictureImageView.image = UIImage(data: data!)
+            }
+        }
+    }
 }

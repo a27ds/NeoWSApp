@@ -25,4 +25,20 @@ class FetchData {
             }
         }
     }
+    
+    func fetchDataImage (url: String) {
+        SVProgressHUD.show(withStatus: "Downloading image")
+        Alamofire.request(url, method: .get).validate().responseJSON { response in
+            if response.result.isSuccess {
+                print("Got the image info")
+                let feedData : JSON = JSON(response.result.value!)
+                JSONParsing.parsingPOD(json: feedData)
+            } else {
+                print("Error \(response.result.error)")
+            }
+        }
+    }
+    
+    
+    
 }

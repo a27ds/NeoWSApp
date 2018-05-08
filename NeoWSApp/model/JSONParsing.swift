@@ -20,10 +20,20 @@ class JSONParsing {
             let orbitingBody = result["close_approach_data"][0]["orbiting_body"].stringValue
             let asteroid = Asteroid(name: name, size: size, dangerous: dangerous, velocity: velocity, missDistance: missDistance, orbitingBody: orbitingBody)
             AsteroidBank.listOfAsteroids.append(asteroid)
+            
         }
         NotificationCenter.default.post(name: .doneParsing, object: nil)
     }
     
+    static func parsingPOD(json: JSON) {
+        let url = json["url"].stringValue
+        
+        PODImage.imageUrl = url
+        
+        NotificationCenter.default.post(name: .doneParsingImageURL, object: nil)
+        
+    }
     
+   
 }
 
