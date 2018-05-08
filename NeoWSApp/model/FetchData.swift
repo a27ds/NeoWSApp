@@ -13,7 +13,11 @@ import SVProgressHUD
 
 class FetchData {
     
-    func fetchData (url: String, date: String) {
+    func fetchData (date: String) {
+        let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
+        let feed = "https://api.nasa.gov/neo/rest/v1/feed?start_date=\(date)&end_date=\(date)&api_key="
+        let url = "\(feed)\(nasaKey)"
+        AsteroidBank.listOfAsteroids.removeAll()
         SVProgressHUD.show(withStatus: "Downloading data")
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             if response.result.isSuccess {

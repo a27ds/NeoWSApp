@@ -16,34 +16,39 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var dateView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var dateViewHeight: NSLayoutConstraint!
-    
+    @IBOutlet weak var searchButton: UIBarButtonItem!
+    @IBOutlet weak var navBar: UINavigationItem!
     
     var listOfAsteroids = [Asteroid]()
-    let todaysDate = GetAsteroidDate.todaysDate()
+    var asteroidDate = GetAsteroidDate.todaysDate()
+    var pick : UIDatePicker!
+    var searchBarButton : UIBarButtonItem!
+    let downloadFeed = FetchData()
+
     
     //MARK: - StartUp functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // MARK: API Keys and API Url's
-        
-        let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
-        let feed = "https://api.nasa.gov/neo/rest/v1/feed?start_date=\(todaysDate)&end_date=\(todaysDate)&api_key="
-        
+
         // MARK: Notification observer
         
         NotificationCenter.default.addObserver(self, selector: #selector(reloadDataStartTableView(notification:)), name: .doneParsing, object: nil)
         
         // MARK: Start download of feed
         
-        let downloadFeed = FetchData()
-        downloadFeed.fetchData(url: "\(feed)\(nasaKey)", date: todaysDate)
+        downloadFeed.fetchData(date: asteroidDate)
         
+        // MARK: - Set datepicker
+        
+        pick = datePicker()
+        pick.alpha = 0
+        searchBarButton = searchButton
     }
     
     // MARK: - Notification
     
     @objc func reloadDataStartTableView(notification: NSNotification) {
+        dateLabel.text = asteroidDate
         startTableView.reloadData()
         SVProgressHUD.dismiss()
     }
@@ -51,14 +56,65 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //MARK: - Buttons
     @IBAction func searchBtnPressed(_ sender: UIBarButtonItem) {
         
-        dateLabel.isHidden = true
-        dateViewHeight.constant = 200
+        dateViewHeight.constant = 150
+        
+        dateView.addSubview(pick)
+        pick.frame.size.width = self.view.bounds.width
+        pick.frame.size.height = 0
         
         UIView.animate(withDuration: 0.3) {
+            self.pick.alpha = 1
+            self.dateLabel.alpha = 0
+            self.pick.frame.size.height = 150
             self.view.layoutIfNeeded()
         }
         
+        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector( hideDatePicker(sender:) ) )
+        navBar.rightBarButtonItem = doneBarButton
+        navBar.rightBarButtonItem?.tintColor = UIColor.white
+    }
+    
+    @objc func hideDatePicker(sender: UIBarButtonItem) {
+        pick.removeFromSuperview()
+        downloadFeed.fetchData(date: getDateFromDatePicker())
+    
+        UIView.animate(withDuration: 0.3) {
+            self.dateLabel.alpha = 1
+            self.pick.alpha = 0
+            self.dateViewHeight.constant = 60
+            self.view.layoutIfNeeded()
+        }
+        navBar.rightBarButtonItem = searchButton
+    }
+    
+    func getDateFromDatePicker() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        let year: String = dateFormatter.string(from: self.pick.date)
+        dateFormatter.dateFormat = "MM"
+        let month: String = dateFormatter.string(from: self.pick.date)
+        dateFormatter.dateFormat = "dd"
+        let day: String = dateFormatter.string(from: self.pick.date)
+        let dateFromDatePicker = "\(year)-\(month)-\(day)"
+        asteroidDate = dateFromDatePicker
+        return dateFromDatePicker
         
+        
+    }
+    
+    // MARK: - PickerWheel
+    
+    func datePicker() -> UIDatePicker {
+        let timePicker = UIDatePicker()
+        let formatter = DateFormatter()
+        formatter.dateStyle = DateFormatter.Style.short
+        formatter.timeStyle = DateFormatter.Style.none
+        formatter.locale = Locale(identifier: "sv_SE")
+        formatter.dateFormat = "yyyy-MM-dd"
+        timePicker.datePickerMode = UIDatePickerMode.date
+        timePicker.locale = Locale(identifier: "sv_SE")
+        
+        return timePicker
     }
     
     //MARK: - TableView
