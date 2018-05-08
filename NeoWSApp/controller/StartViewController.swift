@@ -11,28 +11,33 @@ import SVProgressHUD
 
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    // MARK: - API Keys and API Url's
-    
-    let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
-//    let feedToday = "https://api.nasa.gov/neo/rest/v1/feed/today?detailed=true&api_key="
-    let feed = "https://api.nasa.gov/neo/rest/v1/feed?start_date=2018-05-04&end_date=2018-05-04&api_key="
-    
-    
     //MARK: - Variables
     @IBOutlet weak var startTableView: UITableView!
+    @IBOutlet weak var dateView: UIView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateViewHeight: NSLayoutConstraint!
+    
     
     var listOfAsteroids = [Asteroid]()
+    let todaysDate = GetAsteroidDate.todaysDate()
     
     //MARK: - StartUp functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: API Keys and API Url's
+        
+        let nasaKey = "mxYfugT2OQg976YfLCiansy1TbqxmdhdqGDb2P37"
+        let feed = "https://api.nasa.gov/neo/rest/v1/feed?start_date=\(todaysDate)&end_date=\(todaysDate)&api_key="
+        
+        // MARK: Notification observer
+        
         NotificationCenter.default.addObserver(self, selector: #selector(reloadDataStartTableView(notification:)), name: .doneParsing, object: nil)
         
-        //Test for FetchData Class
+        // MARK: Start download of feed
         
-        let test = FetchData()
-        test.fetchData(url: "\(feed)\(nasaKey)")
+        let downloadFeed = FetchData()
+        downloadFeed.fetchData(url: "\(feed)\(nasaKey)", date: todaysDate)
         
     }
     
@@ -41,6 +46,19 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @objc func reloadDataStartTableView(notification: NSNotification) {
         startTableView.reloadData()
         SVProgressHUD.dismiss()
+    }
+    
+    //MARK: - Buttons
+    @IBAction func searchBtnPressed(_ sender: UIBarButtonItem) {
+        
+        dateLabel.isHidden = true
+        dateViewHeight.constant = 200
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+        
+        
     }
     
     //MARK: - TableView

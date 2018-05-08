@@ -13,13 +13,13 @@ import SVProgressHUD
 
 class FetchData {
     
-    func fetchData (url: String) {
+    func fetchData (url: String, date: String) {
         SVProgressHUD.show(withStatus: "Downloading data")
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             if response.result.isSuccess {
                 print("Got the info")
                 let feedData : JSON = JSON(response.result.value!)
-                JSONParsing.parsing(json: feedData)
+                JSONParsing.parsing(json: feedData, date: date)
             } else {
                 print("Error \(response.result.error)")
             }

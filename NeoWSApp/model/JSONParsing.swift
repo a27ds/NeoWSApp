@@ -10,8 +10,8 @@ import Foundation
 import SwiftyJSON
 
 class JSONParsing {
-    static func parsing(json: JSON) {
-        for result in json["near_earth_objects"]["2018-05-04"].arrayValue{
+    static func parsing(json: JSON, date: String) {
+        for result in json["near_earth_objects"][date].arrayValue{
             let name = result["name"].stringValue
             let size = result["estimated_diameter"]["meters"]["estimated_diameter_max"].floatValue
             let dangerous = result["is_potentially_hazardous_asteroid"].boolValue
