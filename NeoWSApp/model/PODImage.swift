@@ -10,4 +10,5 @@ import Foundation
 
 class PODImage {
     static var imageUrl : String = ""
+    static var imageTitle : String = ""
 }
