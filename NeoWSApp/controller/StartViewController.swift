@@ -126,11 +126,12 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
             tableView.backgroundView = nil
             tableView.rowHeight = 140
             tableView.isScrollEnabled = true
+            tableView.tableFooterView = UIView()
             
         } else {
             let noDataLabel: UILabel     = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
             noDataLabel.text          = "No asteroid data available"
-            noDataLabel.textColor     = UIColor.black
+            noDataLabel.textColor     = UIColor.white
             noDataLabel.textAlignment = .center
             tableView.backgroundView  = noDataLabel
             tableView.separatorStyle  = .none
