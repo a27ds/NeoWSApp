@@ -43,4 +43,43 @@ class Asteroid {
         }
     }
     
+    func getYesOrNoString() -> String {
+        let yes : String = "Yes"
+        let no : String = "No"
+        
+        if self.dangerous {
+            return yes
+        }
+        return no
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
