@@ -11,13 +11,36 @@ import SceneKit
 import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
+    
+    // MARK: - Outlets
 
     @IBOutlet weak var sceneView: ARSCNView!
+    
+    //MARK: - StartUp functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addAsteroid()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Create a session configuration
+        let configuration = ARWorldTrackingConfiguration()
+        
+        // Run the view's session
+        sceneView.session.run(configuration)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Pause the view's session
+        sceneView.session.pause()
+    }
+    
+    // MARK: - Add asteroid into AR scene
     
     func addAsteroid(x: Float = 0, y: Float = 0, z: Float = -0.5) {
         guard let asteriodScene = SCNScene(named: "asteroid.scnassets/asteroid.dae") else { return }
@@ -47,22 +70,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
-        
-        // Run the view's session
-        sceneView.session.run(configuration)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        // Pause the view's session
-        sceneView.session.pause()
-    }
+    // MARK: - Buttons
 
     @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)

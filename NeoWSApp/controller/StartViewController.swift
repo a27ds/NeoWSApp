@@ -106,11 +106,6 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func datePicker() -> UIDatePicker {
         let timePicker = UIDatePicker()
-        let formatter = DateFormatter()
-        formatter.dateStyle = DateFormatter.Style.short
-        formatter.timeStyle = DateFormatter.Style.none
-        formatter.locale = Locale(identifier: "sv_SE")
-        formatter.dateFormat = "yyyy-MM-dd"
         timePicker.datePickerMode = UIDatePickerMode.date
         timePicker.locale = Locale(identifier: "sv_SE")
         timePicker.setValue(UIColor.white, forKey: "textColor")
