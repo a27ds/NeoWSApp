@@ -18,7 +18,6 @@
 		9BF69623209B13F400D81530 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF69621209B13F400D81530 /* CustomCell.xib */; };
 		AD333D4B6E334548903C1470 /* Pods_NeoWSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */; };
 		F372304720A2FEFF00FDDB4C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372304620A2FEFF00FDDB4C /* ARViewController.swift */; };
-		F372304A20A30B4800FDDB4C /* asteroid.dae in Resources */ = {isa = PBXBuildFile; fileRef = F372304920A30B4800FDDB4C /* asteroid.dae */; };
 		F3733BDC20A053DF00AC0CBA /* GetAsteroidDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3733BDB20A053DF00AC0CBA /* GetAsteroidDate.swift */; };
 		F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */; };
 		F3B0DB9B209B0BC000E7BD22 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9A209B0BC000E7BD22 /* StartViewController.swift */; };
@@ -28,6 +27,7 @@
 		F3B0DBA6209B0BC100E7BD22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B0DBA4209B0BC100E7BD22 /* LaunchScreen.storyboard */; };
 		F3B0DBB1209B0BC100E7BD22 /* NeoWSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DBB0209B0BC100E7BD22 /* NeoWSAppTests.swift */; };
 		F3B0DBBC209B0BC100E7BD22 /* NeoWSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DBBB209B0BC100E7BD22 /* NeoWSAppUITests.swift */; };
+		F3D5781A20A34A7300F24F2A /* asteroid.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D5781920A34A7300F24F2A /* asteroid.scnassets */; };
 		F3F9E1A2209C5D1A00481C51 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1A1209C5D1A00481C51 /* JSONParsing.swift */; };
 		F3F9E1A4209C69BB00481C51 /* AsteroidBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9E1A3209C69BB00481C51 /* AsteroidBank.swift */; };
 /* End PBXBuildFile section */
@@ -67,12 +67,6 @@
 		B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C042E5E9EB85F4EC3FB0C841 /* Pods-NeoWSAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppTests/Pods-NeoWSAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		F372304620A2FEFF00FDDB4C /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		F372304920A30B4800FDDB4C /* asteroid.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = asteroid.dae; sourceTree = "<group>"; };
-		F372304B20A30BC400FDDB4C /* Normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Normal.jpg; sourceTree = "<group>"; };
-		F372304C20A30BC400FDDB4C /* Albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Albedo.jpg; sourceTree = "<group>"; };
-		F372304D20A30BC400FDDB4C /* Displacement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Displacement.jpg; sourceTree = "<group>"; };
-		F372304E20A30BC500FDDB4C /* Metalness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Metalness.jpg; sourceTree = "<group>"; };
-		F372304F20A30BC500FDDB4C /* Emission.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Emission.jpg; sourceTree = "<group>"; };
 		F3733BDB20A053DF00AC0CBA /* GetAsteroidDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAsteroidDate.swift; sourceTree = "<group>"; };
 		F3B0DB95209B0BC000E7BD22 /* NeoWSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoWSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +82,7 @@
 		F3B0DBB7209B0BC100E7BD22 /* NeoWSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoWSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B0DBBB209B0BC100E7BD22 /* NeoWSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoWSAppUITests.swift; sourceTree = "<group>"; };
 		F3B0DBBD209B0BC100E7BD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D5781920A34A7300F24F2A /* asteroid.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = asteroid.scnassets; sourceTree = "<group>"; };
 		F3F9E1A1209C5D1A00481C51 /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
 		F3F9E1A3209C69BB00481C51 /* AsteroidBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,20 +175,21 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		9BF69619209B12B200D81530 /* supporting files */ = {
+		9BF69619209B12B200D81530 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				F3B0DBA7209B0BC100E7BD22 /* Info.plist */,
 				F3B0DBA2209B0BC100E7BD22 /* Assets.xcassets */,
+				F3D5781920A34A7300F24F2A /* asteroid.scnassets */,
 			);
-			path = "supporting files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		F3B0DB8C209B0BC000E7BD22 = {
 			isa = PBXGroup;
 			children = (
 				F3B0DB97209B0BC000E7BD22 /* NeoWSApp */,
-				9BF69619209B12B200D81530 /* supporting files */,
+				9BF69619209B12B200D81530 /* SupportingFiles */,
 				F3B0DBAF209B0BC100E7BD22 /* NeoWSAppTests */,
 				F3B0DBBA209B0BC100E7BD22 /* NeoWSAppUITests */,
 				F3B0DB96209B0BC000E7BD22 /* Products */,
@@ -215,12 +211,6 @@
 		F3B0DB97209B0BC000E7BD22 /* NeoWSApp */ = {
 			isa = PBXGroup;
 			children = (
-				F372304920A30B4800FDDB4C /* asteroid.dae */,
-				F372304C20A30BC400FDDB4C /* Albedo.jpg */,
-				F372304D20A30BC400FDDB4C /* Displacement.jpg */,
-				F372304F20A30BC500FDDB4C /* Emission.jpg */,
-				F372304E20A30BC500FDDB4C /* Metalness.jpg */,
-				F372304B20A30BC400FDDB4C /* Normal.jpg */,
 				9BF69618209B127C00D81530 /* controller */,
 				9BF69617209B127300D81530 /* view */,
 				9BF69616209B125A00D81530 /* model */,
@@ -355,8 +345,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B0DBA6209B0BC100E7BD22 /* LaunchScreen.storyboard in Resources */,
-				F372304A20A30B4800FDDB4C /* asteroid.dae in Resources */,
 				F3B0DBA3209B0BC100E7BD22 /* Assets.xcassets in Resources */,
+				F3D5781A20A34A7300F24F2A /* asteroid.scnassets in Resources */,
 				9BF69623209B13F400D81530 /* CustomCell.xib in Resources */,
 				F3B0DB9E209B0BC000E7BD22 /* Main.storyboard in Resources */,
 			);
@@ -650,7 +640,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
-				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -669,7 +659,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7JKA6624L;
-				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

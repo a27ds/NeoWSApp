@@ -20,18 +20,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func addAsteroid(x: Float = 0, y: Float = 0, z: Float = -0.5) {
-        print("hejhej")
-        
-        guard let asteriodScene = SCNScene(named: "asteroid.dae") else {  print("hej"); return }
-        print("fan fna")
+        guard let asteriodScene = SCNScene(named: "asteroid.scnassets/asteroid.dae") else { return }
         let asteroidNode = SCNNode()
         let asteroidSceneChildNodes = asteriodScene.rootNode.childNodes
         
         for childNode in asteroidSceneChildNodes {
             asteroidNode.addChildNode(childNode)
-            
         }
-        
         asteroidNode.position = SCNVector3(x, y, z)
         asteroidNode.scale = SCNVector3(0.1, 0.1, 0.1)
         sceneView.scene.rootNode.addChildNode(asteroidNode)
