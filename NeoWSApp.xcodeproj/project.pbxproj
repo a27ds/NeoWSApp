@@ -13,7 +13,6 @@
 		9A503A3996C478B666D47845 /* Pods_NeoWSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137D548BE1A85CE56BCD6163 /* Pods_NeoWSApp.framework */; };
 		9BF6961B209B130000D81530 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961A209B130000D81530 /* Asteroid.swift */; };
 		9BF6961D209B133400D81530 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961C209B133400D81530 /* FetchData.swift */; };
-		9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6961E209B13B600D81530 /* DetailsViewController.swift */; };
 		9BF69622209B13F400D81530 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF69620209B13F400D81530 /* CustomCell.swift */; };
 		9BF69623209B13F400D81530 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF69621209B13F400D81530 /* CustomCell.xib */; };
 		AD333D4B6E334548903C1470 /* Pods_NeoWSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */; };
@@ -61,7 +60,6 @@
 		92AB5ED8843BBFFF4D5492EA /* Pods-NeoWSAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppUITests/Pods-NeoWSAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BF6961A209B130000D81530 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
 		9BF6961C209B133400D81530 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
-		9BF6961E209B13B600D81530 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		9BF69620209B13F400D81530 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		9BF69621209B13F400D81530 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +165,6 @@
 			children = (
 				F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */,
 				F3B0DB9A209B0BC000E7BD22 /* StartViewController.swift */,
-				9BF6961E209B13B600D81530 /* DetailsViewController.swift */,
 				9BF69620209B13F400D81530 /* CustomCell.swift */,
 				6550992820A04C4400399C25 /* PictureOfTheDayViewController.swift */,
 				F372304620A2FEFF00FDDB4C /* ARViewController.swift */,
@@ -463,7 +460,6 @@
 				F3F9E1A4209C69BB00481C51 /* AsteroidBank.swift in Sources */,
 				F372304720A2FEFF00FDDB4C /* ARViewController.swift in Sources */,
 				9BF69622209B13F400D81530 /* CustomCell.swift in Sources */,
-				9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */,
 				4F616A1720A18F2800B8AC55 /* PODImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
