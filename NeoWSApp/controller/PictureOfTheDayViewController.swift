@@ -10,6 +10,8 @@ import SVProgressHUD
 
 class PictureOfTheDayViewController: UIViewController {
 
+    @IBOutlet weak var titleOfPOD: UILabel!
+    
     @IBOutlet weak var pictureImageView: UIImageView!
     
     // KEY
@@ -34,6 +36,8 @@ class PictureOfTheDayViewController: UIViewController {
     }
     
     func showImage(){
+        titleOfPOD.text = PODImage.imageTitle
+        
         let url = URL(string: PODImage.imageUrl)
     
         DispatchQueue.global().async {

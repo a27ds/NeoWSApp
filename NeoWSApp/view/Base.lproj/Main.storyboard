@@ -173,22 +173,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Srm-r8-fG1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Srm-r8-fG1">
+                                <rect key="frame" x="0.0" y="114" width="375" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title of POD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-og-26Z">
+                                <rect key="frame" x="36" y="40" width="303" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Srm-r8-fG1" firstAttribute="top" secondItem="Eqy-sr-rEh" secondAttribute="top" id="hsm-Of-ciX"/>
-                            <constraint firstItem="Srm-r8-fG1" firstAttribute="leading" secondItem="Eqy-sr-rEh" secondAttribute="leading" id="uFF-Js-iCG"/>
-                            <constraint firstItem="Eqy-sr-rEh" firstAttribute="trailing" secondItem="Srm-r8-fG1" secondAttribute="trailing" id="xdO-cU-60W"/>
-                            <constraint firstItem="Eqy-sr-rEh" firstAttribute="bottom" secondItem="Srm-r8-fG1" secondAttribute="bottom" id="yA6-Rg-SCc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Eqy-sr-rEh"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="ZpI-tt-D0a"/>
                     <connections>
                         <outlet property="pictureImageView" destination="Srm-r8-fG1" id="flB-hF-FeZ"/>
+                        <outlet property="titleOfPOD" destination="LN6-og-26Z" id="vZU-ve-Gnc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OgF-6K-aTj" userLabel="First Responder" sceneMemberID="firstResponder"/>

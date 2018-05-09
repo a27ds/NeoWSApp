@@ -26,8 +26,10 @@ class JSONParsing {
     }
     
     static func parsingPOD(json: JSON) {
-        let url = json["url"].stringValue
+        let url = json["hdurl"].stringValue
+        let title = json["title"].stringValue
         
+        PODImage.imageTitle = title
         PODImage.imageUrl = url
         
         NotificationCenter.default.post(name: .doneParsingImageURL, object: nil)
