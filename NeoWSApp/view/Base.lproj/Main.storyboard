@@ -114,7 +114,14 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Asteroid Tracker" prompt=" " id="vuw-wb-koN"/>
+                                    <navigationItem title="Asteroid Tracker" prompt=" " id="vuw-wb-koN">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="BackButton" id="9IU-Zm-Ulg">
+                                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="YUg-mI-C2P" id="uUh-nb-F8n"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIc-ZI-S9L">
@@ -128,7 +135,7 @@
                             <constraint firstItem="XIc-ZI-S9L" firstAttribute="trailing" secondItem="y3a-zg-fBQ" secondAttribute="trailing" id="byR-60-SoT"/>
                             <constraint firstItem="y3a-zg-fBQ" firstAttribute="leading" secondItem="QQc-6Q-0AB" secondAttribute="leading" id="ipE-sS-Zx1"/>
                             <constraint firstItem="XIc-ZI-S9L" firstAttribute="leading" secondItem="y3a-zg-fBQ" secondAttribute="leading" id="irZ-ZB-MTD"/>
-                            <constraint firstItem="XIc-ZI-S9L" firstAttribute="bottom" secondItem="aMC-na-Xfc" secondAttribute="bottom" id="qCV-6N-KUz"/>
+                            <constraint firstItem="XIc-ZI-S9L" firstAttribute="bottom" secondItem="QQc-6Q-0AB" secondAttribute="bottom" id="qCV-6N-KUz"/>
                             <constraint firstItem="y3a-zg-fBQ" firstAttribute="top" secondItem="QQc-6Q-0AB" secondAttribute="top" id="rcR-tE-vVt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aMC-na-Xfc"/>
@@ -223,6 +230,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackButton" width="33" height="33"/>
         <image name="icons8-comet-52" width="26" height="26"/>
         <image name="telescope" width="26" height="26"/>
     </resources>

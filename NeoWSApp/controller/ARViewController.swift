@@ -29,7 +29,22 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
         asteroidNode.position = SCNVector3(x, y, z)
         asteroidNode.scale = SCNVector3(0.1, 0.1, 0.1)
+        
         sceneView.scene.rootNode.addChildNode(asteroidNode)
+        
+        //Make it spin!!!
+        
+        let x = Float(arc4random_uniform(10))
+        let y = Float(arc4random_uniform(10))
+        let z = Float(arc4random_uniform(10))
+        
+        print(x)
+        print(y)
+        print(z)
+        
+        let action = SCNAction.repeatForever(SCNAction.rotate(by: .pi, around: SCNVector3(x, y, z), duration: 10))
+        asteroidNode.runAction(action)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,5 +64,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
 
-
+    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
