@@ -154,7 +154,7 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } else {
             cell.sizeLabel.text = String(format: "%.0f m", asteroid.size)
         }
-        cell.dangerousLabel.text = "\(asteroid.dangerous)"
+        cell.dangerousLabel.text = "\(asteroid.getYesOrNoString())"
         cell.velocityLabel.text = "\(asteroid.velocity) km/s"
         cell.distanceLabel.text = "\(asteroid.missDistance) km"
         cell.orbitingBodyLabel.text = "\(asteroid.orbitingBody)"
