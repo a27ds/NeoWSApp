@@ -113,7 +113,7 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
         formatter.dateFormat = "yyyy-MM-dd"
         timePicker.datePickerMode = UIDatePickerMode.date
         timePicker.locale = Locale(identifier: "sv_SE")
-        
+        timePicker.setValue(UIColor.white, forKey: "textColor")
         return timePicker
     }
     
