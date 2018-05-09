@@ -17,6 +17,8 @@
 		9BF69622209B13F400D81530 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF69620209B13F400D81530 /* CustomCell.swift */; };
 		9BF69623209B13F400D81530 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF69621209B13F400D81530 /* CustomCell.xib */; };
 		AD333D4B6E334548903C1470 /* Pods_NeoWSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */; };
+		F372304720A2FEFF00FDDB4C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372304620A2FEFF00FDDB4C /* ARViewController.swift */; };
+		F372304A20A30B4800FDDB4C /* asteroid.dae in Resources */ = {isa = PBXBuildFile; fileRef = F372304920A30B4800FDDB4C /* asteroid.dae */; };
 		F3733BDC20A053DF00AC0CBA /* GetAsteroidDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3733BDB20A053DF00AC0CBA /* GetAsteroidDate.swift */; };
 		F3B0DB99209B0BC000E7BD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */; };
 		F3B0DB9B209B0BC000E7BD22 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0DB9A209B0BC000E7BD22 /* StartViewController.swift */; };
@@ -64,6 +66,13 @@
 		9BF69621209B13F400D81530 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		B1C079D57C444911BC3517D4 /* Pods_NeoWSAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoWSAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C042E5E9EB85F4EC3FB0C841 /* Pods-NeoWSAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoWSAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeoWSAppTests/Pods-NeoWSAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F372304620A2FEFF00FDDB4C /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		F372304920A30B4800FDDB4C /* asteroid.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = asteroid.dae; sourceTree = "<group>"; };
+		F372304B20A30BC400FDDB4C /* Normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Normal.jpg; sourceTree = "<group>"; };
+		F372304C20A30BC400FDDB4C /* Albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Albedo.jpg; sourceTree = "<group>"; };
+		F372304D20A30BC400FDDB4C /* Displacement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Displacement.jpg; sourceTree = "<group>"; };
+		F372304E20A30BC500FDDB4C /* Metalness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Metalness.jpg; sourceTree = "<group>"; };
+		F372304F20A30BC500FDDB4C /* Emission.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Emission.jpg; sourceTree = "<group>"; };
 		F3733BDB20A053DF00AC0CBA /* GetAsteroidDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAsteroidDate.swift; sourceTree = "<group>"; };
 		F3B0DB95209B0BC000E7BD22 /* NeoWSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoWSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B0DB98209B0BC000E7BD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +175,7 @@
 				9BF6961E209B13B600D81530 /* DetailsViewController.swift */,
 				9BF69620209B13F400D81530 /* CustomCell.swift */,
 				6550992820A04C4400399C25 /* PictureOfTheDayViewController.swift */,
+				F372304620A2FEFF00FDDB4C /* ARViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -205,6 +215,12 @@
 		F3B0DB97209B0BC000E7BD22 /* NeoWSApp */ = {
 			isa = PBXGroup;
 			children = (
+				F372304920A30B4800FDDB4C /* asteroid.dae */,
+				F372304C20A30BC400FDDB4C /* Albedo.jpg */,
+				F372304D20A30BC400FDDB4C /* Displacement.jpg */,
+				F372304F20A30BC500FDDB4C /* Emission.jpg */,
+				F372304E20A30BC500FDDB4C /* Metalness.jpg */,
+				F372304B20A30BC400FDDB4C /* Normal.jpg */,
 				9BF69618209B127C00D81530 /* controller */,
 				9BF69617209B127300D81530 /* view */,
 				9BF69616209B125A00D81530 /* model */,
@@ -339,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B0DBA6209B0BC100E7BD22 /* LaunchScreen.storyboard in Resources */,
+				F372304A20A30B4800FDDB4C /* asteroid.dae in Resources */,
 				F3B0DBA3209B0BC100E7BD22 /* Assets.xcassets in Resources */,
 				9BF69623209B13F400D81530 /* CustomCell.xib in Resources */,
 				F3B0DB9E209B0BC000E7BD22 /* Main.storyboard in Resources */,
@@ -454,6 +471,7 @@
 				6550992920A04C4400399C25 /* PictureOfTheDayViewController.swift in Sources */,
 				F3B0DBA1209B0BC000E7BD22 /* NeoWSApp.xcdatamodeld in Sources */,
 				F3F9E1A4209C69BB00481C51 /* AsteroidBank.swift in Sources */,
+				F372304720A2FEFF00FDDB4C /* ARViewController.swift in Sources */,
 				9BF69622209B13F400D81530 /* CustomCell.swift in Sources */,
 				9BF6961F209B13B600D81530 /* DetailsViewController.swift in Sources */,
 				4F616A1720A18F2800B8AC55 /* PODImage.swift in Sources */,
