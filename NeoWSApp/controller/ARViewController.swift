@@ -88,7 +88,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         let textNode = SCNNode()
         textNode.scale = SCNVector3(x:0.01, y:0.01, z: 0.01)
         textNode.geometry = text
-        textNode.position = SCNVector3(x: 0, y: asteroidSize, z : -2.0)
+        textNode.position = SCNVector3(x: 0, y: asteroidSize, z : -1.0)
         
         sceneView.scene.rootNode.addChildNode(textNode)
         
