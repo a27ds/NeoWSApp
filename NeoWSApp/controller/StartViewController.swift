@@ -159,7 +159,12 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+        performSegue(withIdentifier: "toDetailsVC", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let ARViewController = segue.destination as? ARViewController
+        ARViewController?.selectedAsteroid = sender as! Int
     }
 }
 
