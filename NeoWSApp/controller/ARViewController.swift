@@ -12,6 +12,8 @@ import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
     
+    var selectedAsteroid : Int = -1
+    
     // MARK: - Outlets
 
     @IBOutlet weak var sceneView: ARSCNView!
@@ -42,16 +44,17 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     // MARK: - Add asteroid into AR scene
     
-    func addAsteroid(x: Float = 0, y: Float = 0, z: Float = -0.5) {
+    func addAsteroid(x: Float = 0, y: Float = 0, z: Float = -2.0) {
         guard let asteriodScene = SCNScene(named: "asteroid.scnassets/asteroid.dae") else { return }
         let asteroidNode = SCNNode()
         let asteroidSceneChildNodes = asteriodScene.rootNode.childNodes
+        let asteroidSize : Float = AsteroidBank.listOfAsteroids[selectedAsteroid].sizeTeller()
         
         for childNode in asteroidSceneChildNodes {
             asteroidNode.addChildNode(childNode)
         }
         asteroidNode.position = SCNVector3(x, y, z)
-        asteroidNode.scale = SCNVector3(0.1, 0.1, 0.1)
+        asteroidNode.scale = SCNVector3(asteroidSize, asteroidSize, asteroidSize)
         
         sceneView.scene.rootNode.addChildNode(asteroidNode)
         

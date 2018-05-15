@@ -27,19 +27,19 @@ class Asteroid {
     }
     
     // Funktion som bestämmer om asteroiden är, small, medium, big eller huge och returnerar en String med den bestämda storleken.
-    func sizeTeller() -> String {
+    func sizeTeller() -> Float {
         let small : Float = 25.0
         let medium : Float = 999.0
         let big : Float = 2000.0
         
         if self.size <= small {
-            return "Small"
+            return 0.1
         } else if self.size <= medium {
-            return "medium"
+            return 0.4
         } else if self.size <= big {
-            return "Big"
+            return 0.7
         } else {
-            return "Huge"
+            return 1.0
         }
     }
     
