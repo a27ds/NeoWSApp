@@ -30,13 +30,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ybz-bI-ouN" secondAttribute="bottom" id="0Dc-IF-Tt9"/>
                             <constraint firstItem="nI3-E9-nLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="0fH-LA-MfA"/>
                             <constraint firstItem="nI3-E9-nLh" firstAttribute="centerX" secondItem="ybz-bI-ouN" secondAttribute="centerX" id="36D-g0-rup"/>
                             <constraint firstItem="ybz-bI-ouN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4Fd-lN-uJu"/>
                             <constraint firstItem="nI3-E9-nLh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="DK9-wL-Qp0"/>
                             <constraint firstItem="ybz-bI-ouN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LM7-n5-wpn"/>
                             <constraint firstItem="ybz-bI-ouN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qM0-IX-fll"/>
-                            <constraint firstItem="ybz-bI-ouN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wcF-Rn-j78"/>
                             <constraint firstItem="nI3-E9-nLh" firstAttribute="centerY" secondItem="ybz-bI-ouN" secondAttribute="centerY" id="yUN-Oy-QZ5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
