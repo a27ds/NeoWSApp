@@ -13,7 +13,6 @@ import ARKit
 class ARViewController: UIViewController, ARSCNViewDelegate {
     
     var selectedAsteroid : Int = -1
-    
     // MARK: - Outlets
 
     @IBOutlet weak var sceneView: ARSCNView!
@@ -23,6 +22,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         addAsteroid()
+        addText()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +70,29 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         let action = SCNAction.repeatForever(SCNAction.rotate(by: .pi, around: SCNVector3(x, y, z), duration: 10))
         asteroidNode.runAction(action)
+        
+    }
+    
+    func addText(){
+        let asteroidSize : Float = AsteroidBank.listOfAsteroids[selectedAsteroid].sizeTeller()
+        let asteroidName : String = AsteroidBank.listOfAsteroids[selectedAsteroid].name
+        
+        let text = SCNText(string: asteroidName, extrusionDepth: 1)
+        
+        //Create material
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor.green
+        text.materials = [material]
+        
+        //Create Node object
+        let textNode = SCNNode()
+        textNode.scale = SCNVector3(x:0.01, y:0.01, z: 0.01)
+        textNode.geometry = text
+        textNode.position = SCNVector3(x: 0, y: asteroidSize, z : -2.0)
+        
+        sceneView.scene.rootNode.addChildNode(textNode)
+        
+        
         
     }
     
