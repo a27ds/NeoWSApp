@@ -18,7 +18,7 @@ class FetchData {
         let feed = "https://api.nasa.gov/neo/rest/v1/feed?start_date=\(date)&end_date=\(date)&api_key="
         let url = "\(feed)\(nasaKey)"
         AsteroidBank.listOfAsteroids.removeAll()
-        SVProgressHUD.show(withStatus: "Downloading data")
+        checkIfInternetAlert(type: "data")
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             if response.result.isSuccess {
                 print("Got the info")
@@ -31,7 +31,7 @@ class FetchData {
     }
     
     func fetchDataImage (url: String) {
-        SVProgressHUD.show(withStatus: "Downloading image")
+        checkIfInternetAlert(type: "image")
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             if response.result.isSuccess {
                 print("Got the image info")
@@ -41,6 +41,28 @@ class FetchData {
                 print("Error \(response.result.error)")
             }
         }
+    }
+    
+    // MARK: - Check if Internet is avalible
+    
+    func checkIfInternetAlert(type: String) {
+        if isConnectedToInternet() {
+            print("You have the Internetz!")
+            SVProgressHUD.show(withStatus: "Downloading \(type)")
+        } else {
+            print("Pity the fool!")
+//            errorMessageInTableView = "You don't have any Internet Connection"
+//            SVProgressHUD.dismiss()
+                        SVProgressHUD.setMaximumDismissTimeInterval(7)
+                        SVProgressHUD.showError(withStatus: "Pity the fool! You don't have any Internetz Connection")
+                        SVProgressHUD.setMaximumDismissTimeInterval(1)
+        }
+    }
+    
+    // MARK: - Helpers
+    
+    func isConnectedToInternet() -> Bool {
+        return NetworkReachabilityManager()!.isReachable
     }
     
     

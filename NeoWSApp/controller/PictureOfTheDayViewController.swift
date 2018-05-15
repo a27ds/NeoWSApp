@@ -23,10 +23,16 @@ class PictureOfTheDayViewController: UIViewController {
         super.viewDidLoad()
        
         NotificationCenter.default.addObserver(self, selector: #selector(waitForFetchImage(notification:)), name: .doneParsingImageURL, object: nil)
-        
+                
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         let getImageInfo = FetchData()
         getImageInfo.fetchDataImage(url: "\(POD)\(nasaKey)")
-        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        SVProgressHUD.dismiss()
     }
     
     // NOTIFICATION

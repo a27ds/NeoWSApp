@@ -8,6 +8,7 @@
 
 import UIKit
 import SVProgressHUD
+import Alamofire
 
 class StartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -24,25 +25,32 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var pick : UIDatePicker!
     var searchBarButton : UIBarButtonItem!
     let downloadFeed = FetchData()
+    var errorMessageInTableView = "No asteroid data available"
 
     
     //MARK: - StartUp functions
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // MARK: Notification observer
         
         NotificationCenter.default.addObserver(self, selector: #selector(reloadDataStartTableView(notification:)), name: .doneParsing, object: nil)
-        
-        // MARK: Start download of feed
-        
-        downloadFeed.fetchData(date: asteroidDate)
         
         // MARK: - Set datepicker
         
         pick = datePicker()
         pick.alpha = 0
         searchBarButton = searchButton
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        checkIfInternetAlert()
+        // MARK: Start download of feed
+        downloadFeed.fetchData(date: asteroidDate)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        SVProgressHUD.dismiss()
     }
     
     // MARK: - Notification
@@ -125,7 +133,7 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
         } else {
             let noDataLabel: UILabel     = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-            noDataLabel.text          = "No asteroid data available"
+            noDataLabel.text          = errorMessageInTableView
             noDataLabel.textColor     = UIColor.white
             noDataLabel.textAlignment = .center
             tableView.backgroundView  = noDataLabel
@@ -165,6 +173,21 @@ class StartViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let ARViewController = segue.destination as? ARViewController
         ARViewController?.selectedAsteroid = sender as! Int
+    }
+    
+    // MARK: - Check if Internet is avalible
+    
+    func checkIfInternetAlert() {
+        if !isConnectedToInternet() {
+            errorMessageInTableView = "You don't have any Internet Connection"
+            startTableView.reloadData()
+        }
+    }
+    
+    // MARK: - Helpers
+    
+    func isConnectedToInternet() -> Bool {
+        return NetworkReachabilityManager()!.isReachable
     }
 }
 
